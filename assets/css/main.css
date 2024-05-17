@@ -7,6 +7,29 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.skill-bar{
+	display: inline-flex;
+	gap: 10px;
+	animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.skill-img{
+	height: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3225,6 +3248,8 @@ input, select, textarea {
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
+		display: initial;
+		width: 100vw;
 	}
 
 		#wrapper > .bg {
@@ -3386,12 +3411,12 @@ input, select, textarea {
 				}
 
 		#intro h1 {
-			font-size: 5rem;
+			font-size: 8rem;
 			line-height: 1;
 		}
 
 		#intro p {
-			font-size: 1.25rem;
+			font-size: 2rem;
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
@@ -3615,16 +3640,18 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(100, 100, 100, 0.9);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
-		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 2000;
+		position: -webkit-sticky;
+    	position: sticky;
+		top: 0;
 	}
 
 		#nav ul.divided li {
@@ -3759,9 +3786,10 @@ input, select, textarea {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: 100%;
 		max-width: 72rem;
 		z-index: 2;
+		overflow: hidden;
 	}
 
 		#main > * {
@@ -3853,12 +3881,8 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 50%;
-			}
-
-			#main > .posts > * {
-				padding: 4rem;
-				width: 50%;
+				padding: 1rem;
+				width: 33%;
 			}
 
 			#main > .posts > article {
@@ -3869,11 +3893,15 @@ input, select, textarea {
 				text-align: center;
 			}
 
+				#main > .posts > article > p {
+					font-size: 14px;
+				}
+
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(3n - 2) {
 					border-left-width: 0;
 				}
 

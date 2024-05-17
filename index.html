@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/personalized.css" />
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +20,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Brady Cason Portfolio</h1>
+						<h1>Brady Cason</h1>
 						<p>Computer Science and Engineering Student at the University of California, Irvine</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -32,27 +33,180 @@
 			<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
-						<li class="active"><a href="index.html">About</a></li>
-						<li><a href="personal.html">Personal Projects</a></li>
-						<li><a href="school.html">School Projects</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#about">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
 					</ul>
 					<ul class="icons">
 						<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
 							<!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-							<li><a href="https://www.instagram.com/brady_cason2/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/BradyCason" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/brady-cason" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/BradyCason" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/brady-cason" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://www.instagram.com/brady_cason2/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 					</ul>
 				</nav>
 
 			<!-- Main -->
 				<div id="main">
+                    <header class="major">
+                        <h1 id="projects">Projects</h1>
+                    </header>
+
+                    <section class="posts">
+                        <article class="post featured">
+                            <header>
+                                <h2><a href="https://github.com/BradyCason/UCI-Course-Updates" target="_blank">UCI Course Updates Discord Bot</a></h2>
+                            </header>
+                            <a href="https://github.com/BradyCason/UCI-Course-Updates" class="image fit" target="_blank"><img src="images/uci_notifications.png" alt="" /></a>
+                            <p>A collection of scripts and servers that work together to allow UCI students to subscribe to certain events pertaining to UCI course registration, such as number of enrolled members, course statuses switching from OPEN to WAITLISTING, sections being added, and more! This project uses a redis server, Discord API, PeterPortal API, and more.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/BradyCason/UCI-Course-Updates" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://github.com/BradyCason/WiiFit-Fitness-Tracker" target="_blank">Fitness Tracker using Arduino</a></h2>
+                            </header>
+                            <a href="https://github.com/BradyCason/WiiFit-Fitness-Tracker" target="_blank" class="image fit" ><img src="images/fitness-tracker.png" alt="" /></a>
+                            <p>Fitness Tracker that counts steps and flights climbed, and displays the results on an app. Uses an Arduino Wemos board, connected to an accelerometer and barometer for measurments. Also takes user input from a button, and displays results on an OLED display along with a piezo buzzer.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/BradyCason/WiiFit-Fitness-Tracker" class="button" target="_blank">Github Repo</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Adl9SaT-O24" class="button" target="_blank">Design Video</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://wordle-helper-sand.vercel.app/" target="_blank">Wordle Helper Website</a></h2>
+                            </header>
+                            <a href="https://wordle-helper-sand.vercel.app/" class="image fit" target="_blank"><img src="images/wordle.png" alt="" /></a>
+                            <p>I original wrote functionality of the Wordle Helper in Python in 2021. The program solves the NY Times puzzle, Wordle, every time. I then created a Unity App that I deployed to my phone with a user interface. Then, in 2024, I converted the python script to JavaScript, and I created this website.</p>
+                            <ul class="actions special">
+                                <li><a href="https://wordle-helper-sand.vercel.app/" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://github.com/BradyCason/Rubik-s-Cube" target="_blank">Rubik's Cube Robot</a></h2>
+                            </header>
+                            <a href="https://github.com/BradyCason/Rubik-s-Cube" class="image fit" target="_blank"><img src="images/rubiks.jpg" alt="" /></a>
+                            <p>Robot that solves the Rubik's Cube. Uses tkinter to input cube position, and python to find solution. Then an Arduino Uno controls the 6 stepper motors attached to the cube.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/BradyCason/Rubik-s-Cube" class="button" target="_blank">Github Repo</a></li>
+                                <li><a href="https://github.com/BradyCason/Rubik-s-Cube" class="button" target="_blank">Design Video</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://fake-store-henna.vercel.app/" target="_blank">Online Store Made With React</a></h2>
+                            </header>
+                            <a href="https://fake-store-henna.vercel.app/" class="image fit" target="_blank"><img src="images/shop.png" alt="" /></a>
+                            <p>This was the final project in <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a> React Course. I used the Fake Store API to get the products data. The website uses React Routing for page movement, has a working cart feature, and filters to sort the items.</p>
+                            <ul class="actions special">
+                                <li><a href="https://fake-store-henna.vercel.app/" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://youtu.be/Y6h2js12TWo?feature=shared" target="_blank">Remote Control Rover</a></h2>
+                            </header>
+                            <a href="https://youtu.be/Y6h2js12TWo?feature=shared" class="image fit" target="_blank"><img src="images/rover.jpg" alt="" /></a>
+                            <p>I built this rover as part of an engineering team in ENGR 7A at UCI, which is the predecessor class to ENGR 7B. I assisted my team in designing and fabricating an Ackerman Steering System, Chassis, Drive Train, and Electronics.</p>
+                            <ul class="actions special">
+                                <li><a href="https://youtu.be/Y6h2js12TWo?feature=shared" class="button" target="_blank">View Design Video</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://bradycason.github.io/Battleship-Game/" target="_blank">Battleship Website</a></h2>
+                            </header>
+                            <a href="https://bradycason.github.io/Battleship-Game/" class="image fit" target="_blank"><img src="images/battleship.png" alt="" /></a>
+                            <p>This is a remake of the classic Battleship game, that I made using HTML, CSS, and Javascript as a project for <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a>, a full stack web development online course.</p>
+                            <ul class="actions special">
+                                <li><a href="https://bradycason.github.io/Battleship-Game/" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://bradycason.github.io/Weather-App/" target="_blank">Weather App with Weather API</a></h2>
+                            </header>
+                            <a href="https://bradycason.github.io/Weather-App/" class="image fit" target="_blank"><img src="images/weather.png" alt="" /></a>
+                            <p>This is a weather app, that I made using HTML, CSS, and Javascript as a project for <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a>. This was my first project that made use of an API.</p>
+                            <ul class="actions special">
+                                <li><a href="https://bradycason.github.io/Weather-App/" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://bradycason.github.io/Todo-List/" target="_blank">To-Do List Website</a></h2>
+                            </header>
+                            <a href="https://bradycason.github.io/Todo-List/" class="image fit" target="_blank"><img src="images/todo.png" alt="" /></a>
+                            <p>This is a website to write To-Do lists. I made it using HTML, CSS, and Javascript as a project for <a target="_blank" href="https://www.theodinproject.com/">The Odin Project</a>.</p>
+                            <ul class="actions special">
+                                <li><a href="https://bradycason.github.io/Todo-List/" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://github.com/BradyCason/Amazon-Web-Scraper-and-Sentiment-Analyzer" target="_blank">Amazon Web Scraper and Sentiment Analyzer</a></h2>
+                            </header>
+                            <a href="https://github.com/BradyCason/Amazon-Web-Scraper-and-Sentiment-Analyzer" class="image fit" target="_blank"><img src="images/amazon.png" alt="" /></a>
+                            <p>This project takes in a link to an amazon page and analyzes the sentiment of each review. It then displays the name of the product, the average sentiment of the reviews, and the number of stars the product has.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/BradyCason/Amazon-Web-Scraper-and-Sentiment-Analyzer" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <header>
+                                <h2><a href="https://github.com/BradyCason/Enigma-Machine/tree/main" target="_blank">Digital Enigma Machine</a></h2>
+                            </header>
+                            <a href="https://github.com/BradyCason/Enigma-Machine/tree/main" class="image fit" target="_blank"><img src="images/enigma.jpg" alt="" /></a>
+                            <p>This program is a working replica of the Enigma Machine, a famous cypher device used in WWII. The user inputs the cypher text and the orientation of the machine, and it will output the decryption.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/BradyCason/Enigma-Machine/tree/main" class="button" target="_blank">View Project</a></li>
+                            </ul>
+                        </article>
+                        
+                    </section>
+
+                    <section class="post">
+                        <header class="major">
+                            <h1 id="skills">Skills</h1>
+                        </header>
+
+                        <div class="skill-bar">
+                            <img class="skill-img" src="images/Python.svg" />
+                            <img class="skill-img" src="images/JS.svg" />
+                            <img class="skill-img" src="images/CSharp.svg" />
+                            <img class="skill-img" src="images/CPlusPlus.svg" />
+                            <img class="skill-img" src="images/html.png" />
+                            <img class="skill-img" src="images/css.png" />
+                            <img class="skill-img" src="images/node.png" />
+                            <img class="skill-img" src="images/git.png" />
+                            <img class="skill-img" src="images/github.png" />
+                            <img class="skill-img" src="images/vscode.jpg" />
+                            <img class="skill-img" src="images/webpack.png" />
+                            <img class="skill-img" src="images/react.png" />
+
+                            <img class="skill-img" src="images/Python.svg" />
+                            <img class="skill-img" src="images/JS.svg" />
+                            <img class="skill-img" src="images/CSharp.svg" />
+                            <img class="skill-img" src="images/CPlusPlus.svg" />
+                            <img class="skill-img" src="images/html.png" />
+                            <img class="skill-img" src="images/css.png" />
+                            <img class="skill-img" src="images/node.png" />
+                            <img class="skill-img" src="images/git.png" />
+                            <img class="skill-img" src="images/github.png" />
+                            <img class="skill-img" src="images/vscode.jpg" />
+                            <img class="skill-img" src="images/webpack.png" />
+                            <img class="skill-img" src="images/react.png" />
+                        </div>
+                    </section>
 
 					<!-- Post -->
 						<section class="post">
 							<header class="major">
-								<span class="date">February 27, 2024</span>
-								<h1>About Brady Cason</h1>
+								<h1 id="about">About Brady Cason</h1>
 							</header>
 							<div class="image main"><img src="images/Brady.JPG" alt="" /></div>
 							<p>As a Computer Science and Engineering student at UCI, I'm on a thrilling journey at the crossroads of technology, innovation, and teamwork.</p>
@@ -104,10 +258,10 @@
 							<ul class="icons alt">
 								<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 								<!--<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
-								<li><a href="https://www.instagram.com/brady_cason2/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="https://github.com/BradyCason" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/brady-cason" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
+                                <li><a href="https://www.instagram.com/brady_cason2/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                            </ul>
 						</section>
 					</section>
 				</footer>
