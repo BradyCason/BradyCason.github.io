@@ -8,9 +8,16 @@
 */
 
 .skill-bar{
+	position: absolute;
+	left: 0;
+	margin-top: -70px;
 	display: inline-flex;
 	gap: 10px;
 	animation: scroll 20s linear infinite;
+}
+
+#skills{
+	padding-bottom: 50px;
 }
 
 @keyframes scroll {
